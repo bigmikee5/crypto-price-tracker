@@ -155,9 +155,11 @@
 
   .coin-price {
     width: 50px;
+    font-size: 12px;
   }
 
   .coin-percent {
     width: 100px;
+    font-size: 12px;
   }
 }
