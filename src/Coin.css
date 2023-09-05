@@ -1,0 +1,163 @@
+.coin-container {
+  display: flex;
+  justify-content: center;
+}
+
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #d7d7d7;
+  width: 900px;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  min-width: 300px;
+}
+
+.coin h1 {
+  font-size: 16px;
+  width: 150px;
+}
+
+.coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+}
+
+.coin-data {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coin-price {
+  width: 110px;
+}
+
+.coin-volume {
+  width: 200px;
+}
+
+.coin-marketCap {
+  width: 240px;
+}
+
+.coin-percent {
+  width: 88px;
+}
+
+.red {
+  color: #f00606;
+}
+
+.green {
+  color: #11d811;
+}
+
+@media screen and (max-width: 1051px) {
+  .coin-volume {
+    display: none;
+  }
+  .coin-row {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .coin-volume {
+    display: none;
+  }
+  .coin-row {
+    width: 450px;
+    margin-right: 230px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .coin-row {
+    width: 450px;
+    margin-right: 30px;
+  }
+
+  .coin-volume {
+    display: none;
+  }
+
+  .coin-marketCap {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .coin-row {
+    width: 250px;
+    margin-right: 200px;
+    border: none;
+  }
+
+  .coin {
+    min-width: 250px;
+  }
+
+  .coin h1 {
+    font-size: 13px;
+    width: 100px;
+  }
+
+  .coin img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .coin-symbol {
+    font-size: 14px;
+  }
+
+  .coin-price {
+    width: 50px;
+  }
+
+  .coin-percent {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .coin-row {
+    margin-right: 50px;
+    border: none;
+  }
+
+  .coin {
+    min-width: 150px;
+  }
+
+  .coin h1 {
+    font-size: 13px;
+    width: 100px;
+  }
+
+  .coin-symbol {
+    font-size: 10px;
+  }
+
+  .coin-price {
+    width: 50px;
+  }
+
+  .coin-percent {
+    width: 100px;
+  }
+}
